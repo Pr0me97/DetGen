@@ -1,7 +1,7 @@
 version: '2'
 services:
   apache:
-    image: 'detlearsom/heartbleed'
+    image: 'vulhub/openssl:1.0.1c-with-nginx'
     volumes:
       - '$PWD/config:/var/www/html'
     ports:
@@ -13,7 +13,7 @@ services:
 
 
   msf:
-    image: 'detlearsom/msfconsole'
+    image: 'metasploitframework/metasploit-framework'
     command: /var/lib/msf_script.sh $DURATION
      # - msfconsole -r /var/lib/msf_script.rc
     volumes:
