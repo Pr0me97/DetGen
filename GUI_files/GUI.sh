@@ -38,6 +38,6 @@ fi
 cd captures/$Directory
 #echo ${Duration}
 . ./$ExecFile $Activity ${Duration}
-mkdir ../../Generated_data/"${Scenario}_${CAPTURETIME}"
+mkdir -p ../../Generated_data/"${Scenario}_${CAPTURETIME}"
 mv data/* ../../Generated_data/"${Scenario}_${CAPTURETIME}"/
 
