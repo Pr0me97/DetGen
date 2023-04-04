@@ -25,7 +25,7 @@ function teardown {
 
 trap '{ echo "Interrupted."; teardown; exit 1; }' INT
 
-ContainerIDS=("capture-120-heartbleed_apache_1" "capture-120-heartbleed_msf_1")
+ContainerIDS=("capture-120-heartbleed_nginx_1" "capture-120-heartbleed_msf_1")
 for ((i=1; i<=REPEAT; i++))
 do
     echo "Repeat Nr " $i

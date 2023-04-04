@@ -1,6 +1,6 @@
 version: '2'
 services:
-  apache:
+  nginx:
     image: 'vulhub/openssl:1.0.1c-with-nginx'
     volumes:
       - '$PWD/config:/var/www/html'
@@ -23,12 +23,12 @@ services:
         ipv4_address: 172.16.233.20
 
 
-  tcpdump_apache:
+  tcpdump_nginx:
     image: 'detlearsom/tcpdump'
     command: not(ip6 or arp or (udp and (src port 5353 or src port 57621))) -v -w "/data/dump-130-heartbleed-server-${CAPTURETIME}-$REPNUM.pcap"
     volumes:
       - '$PWD/data:/data'
-    network_mode: "service:apache"
+    network_mode: "service:nginx"
     depends_on:
       - dummy
 
@@ -47,7 +47,7 @@ services:
     networks:
       - capture
     depends_on:
-      - apache
+      - nginx
 
 networks:
   capture:
