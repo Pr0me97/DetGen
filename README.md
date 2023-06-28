@@ -21,7 +21,7 @@ For the **DetGen-IDS** dataset and the **Stepping-stone dataset** used for publi
    https://docs.docker.com/compose/install/. Note: you need `sudo`
    privileges to run this.
 3. `cd` into the directory where you want to put those project files
-   and use `git clone https://github.com/detlearsom/detgen/` to clone
+   and use `git clone https://github.com/Pr0me97/detgen/` to clone
    the repository into your workspace.
 4. Follow instructions 2 and 3 in
    https://github.com/detlearsom/detgen/blob/master/containers/README.md.
