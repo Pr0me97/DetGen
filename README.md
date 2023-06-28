@@ -24,7 +24,7 @@ For the **DetGen-IDS** dataset and the **Stepping-stone dataset** used for publi
    and use `git clone https://github.com/Pr0me97/detgen/` to clone
    the repository into your workspace.
 4. Follow instructions 2 and 3 in
-   https://github.com/detlearsom/detgen/blob/master/containers/README.md.
+   https://github.com/Pr0me97/detgen/blob/master/containers/README.md.
 
 ## Generating traffic 
 
